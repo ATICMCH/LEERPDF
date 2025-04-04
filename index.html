@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leer PDF y agregar datos en Excel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+
+<body>
+    <h1>Seleccione un archivo pdf</h1>
+    <input type="file" id="fileInput"/>
+    <br>
+    <input type="hidden" id="pregunta" >
+    <button id="boton">Generar respuesta</button>
+    <br>
+    <button id="downloadBtn" style="display: none;">Actualizar Excel</button>
+    <div id="error"></div>
+    <div id="result"></div>
+    <div id="pdfTextContainer"></div>
+</body>
+<script src="index.js"></script>
+
+</html>
